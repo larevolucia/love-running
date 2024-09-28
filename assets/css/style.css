@@ -74,11 +74,11 @@ nav {
 }
 
 #nav-toggle {
-    display: none;
+  display: none;
 }
 
 .nav-toggle-label {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 /* Main content */
@@ -92,4 +92,27 @@ main {
 /* Footer */
 footer {
   background-color: orange;
+}
+
+/* media query for tablets and larger (768px and up) */
+@media screen and (min-width: 768px) {
+  nav {
+    position: relative;
+    display: block;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu li {
+    padding-left: 2rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
 }
