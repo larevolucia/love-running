@@ -54,6 +54,18 @@ header a {
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+/* nav bar toggle styles */
+
+nav {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding:0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a; 
+    background-color: inherit;
+    display: none;
+  }
+
 
 /* Main content */
 main {
