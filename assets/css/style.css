@@ -195,6 +195,8 @@ main {
     line-height: 0;
 }
 
+
+
 /* Footer */
 #social-networks {
   text-align: center;
@@ -209,6 +211,16 @@ main {
   padding: 5%;
   color: #3a3a3a;
 }
+/* media query larger or landscape phones (576px and up) */
+@media screen and (min-width:576px) {
+      /*gallery images*/
+
+    #photos {
+        column-count: 2;
+        column-gap: 0;
+    }
+}
+
 
 /* media query for tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
@@ -266,12 +278,21 @@ main {
     text-align: end;
     align-self: flex-end;
   }
+
+  /*gallery images*/
+  #photos {
+    column-count: 3;
+}
 }
 /*Large devices (screen 992px or larger)*/
 @media screen and (min-width: 992px) {
   #menu a:hover {
     border-bottom: 1px solid #3a3a3a;
   }
+    /*gallery images*/
+    #photos {
+        column-count: 4;
+    }
 }
 /*Large devices (screen 1200px or larger)*/
 @media screen and (min-width: 1200px) {
