@@ -89,9 +89,13 @@ nav {
 
 /* Main content */
 main {
-  /* Make main element take up any surplus space to push footer down */
-  flex: 1 0 auto;
-  margin-top: 47px;
+    /* Enlarge main element to push footer down*/
+    flex: 1 0 auto;
+    /* Add margin at the top to prevent content from being covered by the header */
+    margin-top: 47px;
+    /* Enable flex properties for child elements */
+    display: flex;
+    flex-direction: column;
 }
 /*Hero*/
 #hero {
@@ -213,6 +217,7 @@ main {
     margin-bottom: 20px;
 }
 .radio-buttons {
+    width: 100%;
     display: flex;
     justify-content: space-between;
 }
@@ -223,6 +228,8 @@ main {
     border-radius: 2px;
     background-color: transparent;
     margin: 5px 0 20px 0;
+    padding: 0 5px;
+    width: 100%;
 }
 
 .join-button {
