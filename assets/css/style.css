@@ -279,7 +279,7 @@ main {
     align-self: flex-end;
   }
 
-  /*gallery images*/
+  /* Gallery images*/
   #photos {
     column-count: 3;
 }
